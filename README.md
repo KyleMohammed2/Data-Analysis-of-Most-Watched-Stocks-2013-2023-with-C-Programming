@@ -1,0 +1,2 @@
+# Data-Analysis-of-Most-Watched-Stocks-2013-2023-with-C-Programming
+Key Points:  1. Objective: Analyzing critical stock market data, including opening/closing prices, high/low prices, adjusted closing prices, and volume, for most watched stocks (2013-2023).  2. Algorithms: Developed three robust C++ algorithms for loading datasets, computing annual highest stock prices, and determining stock growth or decrease.
