@@ -1,1 +1,25 @@
+Algorithm # 1 Load the dataset into memory: Define a folder name containing CSV files. 
+Check if the folder exists. Create an empity vector to store all the data. Loop over all files in the folder. 
+Check if the file is a CSV file. b. Read the data from the file using the function "readDataFromFile". c. 
+Add the data to the vector of all data and store it in a suitable data structure. Use the data as needed. 
+Sub-module (function): Reads a single file and returns its data as a vector of StockData structs. 
+Skips the heacler row and reads each subsequent row, storing its data in a StockData struct and adding it to the vector of data rows. 
+Sub-module (Display information): Print the table header with column names "Date", "Open", "High", "Low", "Close", "Adj Close", and "Volume". 
+Print a separator line with- characters. End
 
+Algorithm # 2 Compute the highest stock price for each year: Create a hash table to store the highest stock price for each year. 
+Iterate over each row in the data structure. Extract the year and stock price from the current row. Check if the current year already exists in the hash table. 
+If it doesn't, add it with the current stock price as the highest price. 
+If the current year already exists in the hash table, compare the current stock price with the highest price stored in the hash table. 
+If the current stock price is higher than the highest price stored in the hash table, update the hash table with the new highest price for that year. 
+After iterating over all rovs, iterate over the hash table to output each year and its corresponding highest stock price
+
+Algorithm #3 Determine if the stock continues to grow or decrease for each year: Initialize empty maps highestPrices, firstStatus, and lastStatus. 
+Loop through each row in the data: a. Extract the year from the name of the row. b. Extract the adjusted close price of the stock from the row. c. 
+Check if the year is already present in the highestPrices map. 
+i. If not, add the year with its highest price as the stock price, and its first status as "stable" in highestPrices and firstStatus maps, respectively.
+ii. If yes, get the highest price of the year from the highestPrices map and compare it with the stock price. 
+1. If the stock price is higher than the hinhest nrineest price for the year, and set its last status as "growing" in the lastStatus map. 
+If the stock price is equal to the highest price, set its last status as "stable" in the lastStatus map If the stock price is lower than the highest price, set its last status as "decreasing" in the lastStatus map. 
+Print the table header with Year, First Status, and Last Status. Print a separator line Loop through each year in the firstStatus map: a. 
+Print the year, its first status, and its last status from the firstStatus and lastStatus maps. respectively. End.
